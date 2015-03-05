@@ -1,12 +1,7 @@
 <div class="jumbotron">
-	<h1>Welcome to my app!</h1>
-	<% if user_signed_in? %>
-		Welcome to the members area!
-	<% else %>	
-	<p>
-		<%= link_to "Log In", new_user_session_path, class: "btn btn-default btn-lg" %>
-	 	<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg " %>
-	 </p>
-	 <% end %>
+	<h2>Bine ai venit! Bienvenido! Bienvenue!</h2>
+	<p><h3>Support RustySporkBoys team and get the latest info.</p> 
+	<p><%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg" %> to join the team.</h3></p>
+
 
 </div>
