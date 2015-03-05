@@ -11,3 +11,10 @@ $jumbotron-bg:					white;
 $navbar-inverse-bg: 			#2980b9;
 $navbar-inverse-link-color: 	white;
 @import 'bootstrap';
+
+.center {
+	text-align: center;
+}
+.navbar-brand {
+	font-weight: bold;
+}
