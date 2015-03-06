@@ -8,6 +8,7 @@ Rails.application.routes.draw do
  get "undoc" => "pages#undoc"
  get "education" => "pages#education"
  get "getinvolved" => "pages#getinvolved"
+ 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
