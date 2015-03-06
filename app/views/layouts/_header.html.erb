@@ -1,45 +1,45 @@
-<nav class="navbar navbar-default">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="http://dreamtosoar.herokuapp.com">DreamToSoar</a>
-      <%= link_to image_tag('charlie.jpg'), root_path, class: "navbar-brand" %>
-    </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-   
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://dreamtosoar.herokuapp.com">DreamToSoar</a>
+          <%= link_to image_tag('charlie.jpg'), root_path, class: "navbar-brand" %>
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <% if user_signed_in? %>
-          <li><%= link_to "Ciao for Now!", destroy_user_session_path, method: :delete %></li>
-        <% else %>
-          <li><%= link_to "Sign Up", new_user_registration_path %></li>
-          <li><%= link_to "Log In", new_user_session_path %></li>
-        <% end %>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
 
-<nav class="navbar navbar-inverse">
-  <div class="container">
-    <ul class nav navbar-center>
-      <li><%= link_to "Home", root_path %></li>
-      <li><%= link_to "About", about_path %></li>
-      <li><%= link_to "Bio", bio_path %></li>
-      <li><%= link_to "Foster", foster_path %></li>
-      <li><%= link_to "Undoc", foster_path %></li>
-    </uL>
-  </div>
-</nav>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+       
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <% if user_signed_in? %>
+              <li><%= link_to "Ciao for Now!", destroy_user_session_path, method: :delete %></li>
+            <% else %>
+              <li><%= link_to "Sign Up", new_user_registration_path %></li>
+              <li><%= link_to "Log In", new_user_session_path %></li>
+            <% end %>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <ul class="nav nav-pills center-pills">
+        <li role="presentation"><%= link_to "Home", root_path %></li>
+        <li role="presentation"><%= link_to "About", about_path %></li>
+        <li role="presentation"><%= link_to "Foster Youth", foster_path %></li>
+        <li role="presentation"><%= link_to "Undocumented Youth", undoc_path %></li>
+        <li role="presentation"><%= link_to "Education", education_path %></li>
+        <li role="presentation"><%= link_to "Get Involved", getinvolved_path %></li>
+      </ul>
+    </div>

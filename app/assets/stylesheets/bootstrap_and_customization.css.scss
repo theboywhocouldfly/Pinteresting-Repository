@@ -10,13 +10,22 @@ $brand-primary:					#c0392b;
 $jumbotron-bg:					white;
 $navbar-inverse-bg: 			#2980b9;
 $navbar-inverse-link-color: 	white;
+$panel-bg: #bdc3c7;
+$panel-primary-text: #34495e;
+$nav-pills-active-link-hover-color: #8e44ad;
 
 @import "bootstrap-sprockets";
 @import 'bootstrap';
+
 
 .center {
 	text-align: center;
 }
 .navbar-brand {
 	font-weight: bold;
+}
+
+.center-pills {
+    display: flex;
+    justify-content: center;
 }
