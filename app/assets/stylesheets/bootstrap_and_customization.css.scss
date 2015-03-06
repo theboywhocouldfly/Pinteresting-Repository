@@ -11,6 +11,7 @@ $jumbotron-bg:					white;
 $navbar-inverse-bg: 			#2980b9;
 $navbar-inverse-link-color: 	white;
 
+@import "bootstrap-sprockets";
 @import 'bootstrap';
 
 .center {
