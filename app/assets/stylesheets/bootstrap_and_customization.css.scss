@@ -3,20 +3,32 @@
 //= depend_on_asset "bootstrap/glyphicons-halflings-regular.ttf"
 //= depend_on_asset "bootstrap/glyphicons-halflings-regular.woff"
 
-$body-bg:   					#3498db;
+$body-bg:   					#FFF;
 $navbar-height:					45px;
 $navbar-default-brand-color:	#c0392b;
 $brand-primary:					#c0392b;
 $jumbotron-bg:					white;
 $navbar-inverse-bg: 			#2980b9;
 $navbar-inverse-link-color: 	white;
-$panel-bg: #bdc3c7;
-$panel-primary-text: #34495e;
+$panel-bg:                      #FFF;
+$panel-primary-text:            #34495e;
+$panel-inverse-bg:              #34495e;
 $nav-pills-active-link-hover-color: #8e44ad;
+$nav-pills-text-color:          white;
 
 @import "bootstrap-sprockets";
 @import 'bootstrap';
+@font-face {
+    font-family: 'ITCStoneSansBold';
+    src: url('stonesanbol-webfont.eot');
+    src: local('â˜º'), url('stonesanbol-webfont.woff') format('woff'), url('stonesanbol-webfont.ttf') format('truetype'), url('stonesanbol-webfont.svg#webfont3aRtG1lK') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
+.font-cool {
+    font-family: 'ITCStoneSandBold';
+}
 
 .center {
 	text-align: center;
@@ -28,6 +40,11 @@ $nav-pills-active-link-hover-color: #8e44ad;
 .center-pills {
     display: flex;
     justify-content: center;
+}
+
+.nav-pills a, {
+    color:            white;
+    background-color: black;
 }
 
 .navbar-fixed-top {
