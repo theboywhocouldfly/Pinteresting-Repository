@@ -1,8 +1,8 @@
-
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar navbar-default">
       <div class="font-cool">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
+          <br></br>
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
               <span class="sr-only">Toggle navigation</span>
@@ -30,22 +30,18 @@
                 <li><%= link_to "Log In", new_user_session_path %></li>
               <% end %>
             </ul>
+            <br></br>
+            <br></br>
+              <ul class="nav nav-pills center-pills">
+                <li role="presentation"><%= link_to "HOME", root_path %></li>
+                <li role="presentation"><%= link_to "ABOUT", about_path %></li>
+                <li role="presentation"><%= link_to "FOSTER YOUTH", foster_path %></li>
+                <li role="presentation"><%= link_to "UNDOCUMENTED YOUTH", undoc_path %></li>
+                <li role="presentation"><%= link_to "EDUCATION", education_path %></li>
+                <li role="presentation"><%= link_to "GET INVOLVED", getinvolved_path %></li>
+              </ul> 
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
 
-    <div class="panel panel-default"
-      <div class="panel-body">
-        <div class="containe6r">
-          <ul class="nav nav-pills center-pills">
-            <li role="presentation"><%= link_to "HOME", root_path %></li>
-            <li role="presentation"><%= link_to "ABOUT", about_path %></li>
-            <li role="presentation"><%= link_to "FOSTER YOUTH", foster_path %></li>
-            <li role="presentation"><%= link_to "UNDOCUMENTED YOUTH", undoc_path %></li>
-            <li role="presentation"><%= link_to "EDUCATION", education_path %></li>
-            <li role="presentation"><%= link_to "GET INVOLVED", getinvolved_path %></li>
-          </ul>
-        </div>
-      </div>
-    </div>
   </div>
