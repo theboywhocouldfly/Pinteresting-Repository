@@ -26,7 +26,18 @@ $nav-pills-text-color:          white;
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Raleway Thin'), local('Raleway-Thin'), url(http://fonts.gstatic.com/s/raleway/v9/RJMlAoFXXQEzZoMSUteGWJBw1xU1rKptJj_0jans920.woff2) format('woff2');
+}    
  
+.font-raleway {
+    font-family: 'Raleway' !important;
+}    
+
 .font-cool {
     font-family: 'ITCStoneSandBold';
 }
